@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-02-feedback",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "homepage": "https://yuriyaza.github.io/goit-react-hw-02-feedback/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
