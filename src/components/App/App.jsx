@@ -38,22 +38,23 @@ export class App extends React.Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 0, 'bad']}
+            options={['good', 'neutral', 'bad']}
             onLeaveFeedback={this.onFeedbackButtonClick}
           />
         </Section>
 
         <Section title="Statistics">
-          {this.countTotalFeedback() > 0
-            ? <Statistics
+          {this.countTotalFeedback() > 0 ? (
+            <Statistics
               good={good}
               neutral={neutral}
               bad={bad}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
-              />
-            : <Notification message="There is no feedback" />
-          }
+            />
+          ) : (
+            <Notification message="There is no feedback" />
+          )}
         </Section>
       </>
     );
