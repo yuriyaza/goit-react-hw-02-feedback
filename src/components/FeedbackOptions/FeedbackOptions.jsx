@@ -8,8 +8,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         return (
           <li key={item}>
             <button
-              type="button"
               className={css.button}
+              type="button"
               id={item}
               onClick={onLeaveFeedback}>
               {item}

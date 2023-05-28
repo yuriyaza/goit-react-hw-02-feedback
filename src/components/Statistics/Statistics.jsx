@@ -9,6 +9,7 @@ export const Statistics = ({ good, neutral, bad, total, positivePercentage }) =>
         <li>Natural: {neutral}</li>
         <li>Bad: {bad}</li>
       </ul>
+      
       <ul className={css.totalList}>
         <li>Total: {total}</li>
         <li>Positive: {positivePercentage}%</li>

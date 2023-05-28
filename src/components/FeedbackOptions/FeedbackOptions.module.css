@@ -6,5 +6,17 @@
   padding: 5px 20px;
   margin-right: 10px;
   text-transform: capitalize;
-  cursor: pointer;
+
+  background-color: #e3e3e3;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #d3d3d3;
+}
+
+.button:active {
+  scale: 0.98;
 }
